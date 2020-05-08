@@ -1,13 +1,16 @@
+/* Navigation Menu */
 .navBG {
     background-image: url("behlendorfLawNavBG.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
-
 }
 .navContainer {
    font-size: larger;
-
 }
+.waves-effect{
+    background-color: #E3EA00;
+    color:black
+}
+/* End Naviation menu */

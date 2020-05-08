@@ -1,11 +1,21 @@
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
-
-body {
     flex: 1 0 auto;
 }
 
+style.css
+  .navBG {
+    background-image: url("#");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.navContainer {
+   font-size: larger;
+}
 

@@ -1,0 +1,13 @@
+.navBG {
+    background-image: url("behlendorfLawNavBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+
+}
+.navContainer {
+   font-size: larger;
+
+}

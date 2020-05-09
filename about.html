@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Firm</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- OpenLayers CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+
 </head>
 <body>
+
+    <nav class = "navBG">
+        <div class = "navContainer">
+            <div class="nav-wrapper">
+                <img src="#" class="brand-logo center">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
+                        <i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <!-- Main About Me Container -->
     <div class = "container">
         <div class = "row">
@@ -34,25 +57,34 @@
     </div>
 
     <!-- Footer -->
-    <footer class="page-footer #212121 grey darken-4" >
-        <div class="container">
+    <footer class="page-footer #212121 grey darken-4" id="footer">
+        <div class="container" id="contentFooter">
             <div class="row">
-                <div class="col l6 s12">
-                <h5 class="white-text">Law Offices of Theodore A. Behlendorf</h5>
-                <p class="grey-text text-lighten-4">Please contact us for a FREE Initial Consultation</p>
+                <div class="col s6">
+                    <h5 class="white-text left-align">Theodore A. Behlendorf, APC</h5>
+                    <p class="grey-text text-lighten-4 left-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">About Our Team</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
-                </ul>
+                <div class="col s4">
+                    <h5 class="white-text left-align">Location</h5>
+                    <p class="grey-text text-lighten-4 left-align">
+                        15840 Ventura Blvd Ste 208<br> 
+                        Encino, CA 91436<br>
+                        Tel. (213) 487-4861 / (213) 487-4862<br> 
+                        Fax. (213) 487-4863
+                    </p>
+                </div>
+                <div class="col s2">
+                    <h5 class="white-text right-align">Links</h5>
+                    <ul>
+                        <li class="right-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li class="right-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
+                        <li class="right-align"><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <div class="container">
+            <div class="container center-align">
             © 2020 Copyright Theodore A. Behlendorf, APC
             </div>
         </div>

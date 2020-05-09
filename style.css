@@ -1,5 +1,6 @@
 
 body {
+    position: relative;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -17,5 +18,26 @@ style.css
 }
 .navContainer {
    font-size: larger;
+}
+
+#contentFooter {
+    width: 100%;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.map {
+    height: 400px;
+    width: 100%;
 }
 

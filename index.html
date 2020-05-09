@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- OpenLayers CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
 
     <title>Behlendorf Law Offices</title>
 </head>
@@ -45,7 +48,24 @@
         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
     </ul>
   
-    
+    <!-- Div for Map Input -->
+    <div id="map" class="map"></div>
+    <!-- JS for Map -->
+    <script>
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                source: new ol.source.OSM()
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([34.41, 8.82]),
+                zoom: 4
+            })
+        });
+    </script>
+
     <!-- Footer -->
     <footer class="page-footer #212121 grey darken-4" id="footer">
         <div class="container" id="contentFooter">

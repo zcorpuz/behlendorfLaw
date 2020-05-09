@@ -28,24 +28,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Div for Map Input -->
-    <div id="map" class="map"></div>
-    <!-- JS for Map -->
-    <script>
-        var map = new ol.Map({
-            target: 'map',
-            layers: [
-                new ol.layer.Tile({
-                source: new ol.source.OSM()
-                })
-            ],
-            view: new ol.View({
-                center: ol.proj.fromLonLat([34.41, 8.82]),
-                zoom: 4
-            })
-        });
-    </script>
     
     <!-- Main About Me Container -->
     <body>
@@ -113,13 +95,32 @@
     <footer class="page-footer #212121 grey darken-4" id="footer">
         <div class="container" id="contentFooter">
             <div class="row">
-                <div class="col s6">
-                    <h5 class="white-text left-align">Theodore A. Behlendorf, APC</h5>
-                    <p class="grey-text text-lighten-4 left-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
-                </div>
                 <div class="col s4">
-                    <h5 class="white-text left-align">Location</h5>
-                    <p class="grey-text text-lighten-4 left-align">
+                    <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5>
+                    <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
+                </div>
+                <!-- Div for Map Input -->
+                <div class="col s3">
+                    <div id="map" class="map"></div>
+                </div>
+                <!-- JS for Map -->
+                <script>
+                    var map = new ol.Map({
+                        target: 'map',
+                        layers: [
+                            new ol.layer.Tile({
+                            source: new ol.source.OSM()
+                            })
+                        ],
+                        view: new ol.View({
+                            center: ol.proj.fromLonLat([-118.478890, 34.155240]),
+                            zoom: 16
+                        })
+                    });
+                </script>
+                <div class="col s3">
+                    <h5 class="white-text center-align">Location</h5>
+                    <p class="grey-text text-lighten-4 center-align">
                         15840 Ventura Blvd Ste 208<br> 
                         Encino, CA 91436<br>
                         Tel. (213) 487-4861 / (213) 487-4862<br> 
@@ -127,11 +128,11 @@
                     </p>
                 </div>
                 <div class="col s2">
-                    <h5 class="white-text right-align">Links</h5>
+                    <h5 class="white-text center-align">Links</h5>
                     <ul>
-                        <li class="right-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-                        <li class="right-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
-                        <li class="right-align"><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
                     </ul>
                 </div>
             </div>

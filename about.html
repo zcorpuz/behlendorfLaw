@@ -7,68 +7,142 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- OpenLayers CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class = "navBG navbar-fixed">
+
+    <nav class = "navBG">
         <div class = "navContainer">
             <div class="nav-wrapper">
-                <img src="Behlendorf_Nav_Logo.png" class="brand-logo center"></a>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <img src="#" class="brand-logo center">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
+                        <i class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
-                            <li><a href="#!"  class="waves-effect waves-light btn" >Home</a></li>
-                            <li><a href="#!" class="waves-effect waves-light btn">About</a></li>
-                            <li><a href="#"  class="waves-effect waves-light btn">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
-             </div>
-         </div>
-    </nav>
-<!-- Navbar Side Menu -->
-<ul id="slide-out" class="sidenav">
-    <li>
-        <div class="user-view">
-            <div class="background">
-                <img src="#">
             </div>
-                <a href="#user"><img class="circle" src="#"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
         </div>
-    </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-</ul>
-<!-- End Navbar -->
+    </nav>
+    
     <!-- Main About Me Container -->
-    <div class = "container">
-        <div class = "row">
-            <div class = "col s9">
-                <h5>
-                    About the Lawyers
-                </h5>
-                <div class = "col s12">
-                    <div class  = "card horizontal">
-                            <span class = "card-title"> 
-                                Theodore A. Behlendorf
-                            </span>
-                            <span class = "card-content">
-                                Ted Behlendorf has been practicing immigration law for hasjhdflkas asjhfd asdjhowkjh lksjdfwoie lwje;lij/ w.
-                            </span>
+    <body>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col s8">
+                    <h3>
+                        About the Lawyers
+                    </h3>
+                        <div class="col s12 m6">
+                            <div class="card sticky-action">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                  <img class="activator" src="https://media.gettyimages.com/photos/smiling-lawyer-sitting-at-desk-in-office-picture-id104821116?s=612x612">
+                                </div>
+                                <div class="card-content">
+                                  <span class="card-title activator grey-text text-darken-4">Theodore A. Behlendorf<i style = "font-style: normal;" class="material-icons right">&vellip;</i></span>
+                                </div>
+                                <div class="card-reveal">
+                                  <span class="card-title grey-text text-darken-4">Bio<i class="material-icons right">close</i></span>
+                                  <p>Theodore Behlendorf is a graduate of Tulane Law School and has been a member of the California State Bar since 1995.  His practice focuses on Immigration and Nationality law, with an emphasis on immigrant and non-immigrant employment and family-based petitions.  Atty. Behlendorf  specializes in cases before the Immigration Courts, Board of Immigration Appeals, and Appellate Courts. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card sticky-action">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                  <img class="activator" src="https://media.gettyimages.com/photos/smiling-lawyer-sitting-at-desk-in-office-picture-id104821116?s=612x612">
+                                </div>
+                                <div class="card-content">
+                                  <span class="card-title activator grey-text text-darken-4">Maria R. Sedano <i style = "font-style: normal;" class="material-icons right">&vellip;</i></span>
+                                </div>
+                                <div class="card-reveal">
+                                  <span class="card-title grey-text text-darken-4">Bio<i class="material-icons right">close</i></span>
+                                  <p>Maria "Joy" Sedano is an associate at the Law Offices of Theodore Behlendorf, where she represents individual and corporate clients in their family- and employment-based petitions and other stand-alone applications before the U.S. Citizenship & Immigration Services.  She received her law degree from Loyola Law School and her Bachelor of Science degree, magna cum laude, in Business Administration with an emphasis in Accounting from Mount St. Mary's University.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class = "col s4">
+                    <h3> 
+                        Our Law Firm
+                    </h3>
+                    <div class="col s12">
+                        <div class="card sticky-action">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="https://images1.loopnet.com/i2/2QPQE0fhUfkhkjVY3Q8Kv2B3BAGailmnMzX_H33cQt4/116/image.jpg">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator grey-text text-darken-4">History of the Firm <i style = "font-style: normal;" class="material-icons right">&vellip;</i></span>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title grey-text text-darken-4">The Firm<i class="material-icons right">close</i></span>
+                              We are a Los Angeles-based law firm focused solely on handling immigration cases, representing both individual and corporate clients within and outside the United States.  Our services include assisting clients in obtaining nonimmigrant visas and permanent resident (green card) status for themselves, their families, or for their employees.  Theodore (Ted) Behlendorf has more than 25 years of experience practicing immigration law, including removal defense.  Maria (Joy) Sedano also has 20 years of experience working exclusively in all aspects of the immigration process, five of which as a practicing attorney.  Immigration is all we do. 
+                              </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class = "col s3">
-                <h5> 
-                    Our Law Firm
-                </h5>
+        </div>
+    </body>
+
+    <!-- Footer -->
+    <footer class="page-footer #212121 grey darken-4" id="footer">
+        <div class="container" id="contentFooter">
+            <div class="row">
+                <div class="col s4">
+                    <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5>
+                    <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
+                </div>
+                <!-- Div for Map Input -->
+                <div class="col s3">
+                    <div id="map" class="map"></div>
+                </div>
+                <!-- JS for Map -->
+                <script>
+                    var map = new ol.Map({
+                        target: 'map',
+                        layers: [
+                            new ol.layer.Tile({
+                            source: new ol.source.OSM()
+                            })
+                        ],
+                        view: new ol.View({
+                            center: ol.proj.fromLonLat([-118.478890, 34.155240]),
+                            zoom: 16
+                        })
+                    });
+                </script>
+                <div class="col s3">
+                    <h5 class="white-text center-align">Location</h5>
+                    <p class="grey-text text-lighten-4 center-align">
+                        15840 Ventura Blvd Ste 208<br> 
+                        Encino, CA 91436<br>
+                        Tel. (213) 487-4861 / (213) 487-4862<br> 
+                        Fax. (213) 487-4863
+                    </p>
+                </div>
+                <div class="col s2">
+                    <h5 class="white-text center-align">Links</h5>
+                    <ul>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-
+        <div class="footer-copyright">
+            <div class="container center-align">
+            © 2020 Copyright Theodore A. Behlendorf, APC
+            </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>

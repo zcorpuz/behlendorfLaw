@@ -1,16 +1,43 @@
-/* Navigation Menu */
-.navBG {
-    background-image: url("behlendorfLawNavBG.png");
+
+body {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+style.css
+  .navBG {
+    background-image: url("#");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    
 }
 .navContainer {
    font-size: larger;
 }
-.waves-effect{
-    background-color: #E3EA00;
-    color:black
+
+#contentFooter {
+    width: 100%;
 }
-/* End Naviation menu */
+
+#footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.map {
+    height: 200px;
+    width: 100%;
+}
+

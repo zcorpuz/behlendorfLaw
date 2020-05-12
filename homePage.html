@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Firm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- OpenLayers CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+
+</head>
+<body>
+      <!-- Navbar -->
+    <nav class = "navBG">
+        <div class = "navContainer">
+            <div class="nav-wrapper">
+                <img src="#" class="brand-logo center">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main About Me Container -->
+    <body>
+        <div class = "container">
+            <div class = "row">
+              <div class = "col s8">
+                <div class="col s12 m6">
+                  <div class="sumSummary">
+                    <h4>About Us</h4>  
+                    <p>We are a Los Angeles-based law firm focused exclusively on handling immigration cases, representing both individual and corporate clients within and outside the United States. Theodore Behlendorf and Maria Sedano have more than 20 years of experience practicing all aspects of immigration law. </p>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                      <div class="sumSummary">
+                        <h4>Scope of Work</h4>
+                          <p> Our services include assisting clients in obtaining nonimmigrant visas and permanent resident (green card) status for themselves, their families, or for their employees. 
+                          </p>
+                          <ul>
+                              <li><u>NON IMMIGRANT - TEMPORARY STATUS</u></li>
+                              <li>B, E, F, H1B, H2A, H2B, I, J, K, L, M, O, P, Q, R, TN, Dependent, and others categories</li>
+                              <li><u>IMMIGRANT - PERMANENT STATUS - EMPLOYMENT BASED</u></li>
+                              <li>EB1, EB2,EB3,EB4,EB5</li>
+                              <li><u>NON IMMIGRANT - PERMANENT STATUS - FAMILY BASED</u></li>
+                              <li>First, Second, Third, and Fourth Preference</li>
+                              <li><u>GREEN CARD LOTTERY, ASYLUM/REFUGEE, CITIZENSHIP, CONSULAR PRACTICE, AND OTHERS</u></li>
+                          </ul>
+                        </div>
+                    </div> 
+              </div>
+              <div class = "col s4">
+                  <h3> 
+                      Twitter
+                  </h3>
+                  <div class="col s12">
+                      <div class="twitter">
+                            <p>Twitter API will go here! 
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!--footer--> 
+    <footer class="page-footer #212121 grey darken-4" id="footer">
+      <div class="container" id="contentFooter">
+          <div class="row">
+              <div class="col s4">
+                  <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5>
+                  <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
+              </div>
+              <!-- Div for Map Input -->
+              <div class="col s3">
+                  <div id="map" class="map"></div>
+              </div>
+              <!-- JS for Map -->
+              <script>
+                  var map = new ol.Map({
+                      target: 'map',
+                      layers: [
+                          new ol.layer.Tile({
+                          source: new ol.source.OSM()
+                          })
+                      ],
+                      view: new ol.View({
+                          center: ol.proj.fromLonLat([-118.478890, 34.155240]),
+                          zoom: 16
+                      })
+                  });
+              </script>
+              <div class="col s3">
+                  <h5 class="white-text center-align">Location</h5>
+                  <p class="grey-text text-lighten-4 center-align">
+                      15840 Ventura Blvd Ste 208<br> 
+                      Encino, CA 91436<br>
+                      Tel. (213) 487-4861 / (213) 487-4862<br> 
+                      Fax. (213) 487-4863
+                  </p>
+              </div>
+              <div class="col s2">
+                  <h5 class="white-text center-align">Links</h5>
+                  <ul>
+                      <li class="center-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                      <li class="center-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
+                      <li class="center-align"><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <div class="container center-align">
+          © 2020 Copyright Theodore A. Behlendorf, APC
+          </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

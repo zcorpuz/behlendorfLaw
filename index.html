@@ -7,45 +7,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- OpenLayers CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+
     <title>Behlendorf Law Offices</title>
 </head>
+
 <body>
-<!-- Navbar -->
-      <nav class = "navBG navbar-fixed">
+    <!-- Navbar -->
+    <nav class = "navBG">
         <div class = "navContainer">
             <div class="nav-wrapper">
-                <img src="Behlendorf_Nav_Logo.png" class="brand-logo center"></a>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#!"  class="waves-effect waves-light btn" >Home</a></li>
-                            <li><a href="about.html" class="waves-effect waves-light btn">About</a></li>
-                            <li><a href="contact.html"  class="waves-effect waves-light btn">Contact</a></li>
-                        </ul>
-             </div>
-         </div>
-    </nav>
-<!-- Navbar Side Menu -->
-<ul id="slide-out" class="sidenav">
-    <li>
-        <div class="user-view">
-            <div class="background">
-                <img src="#">
+                <img src="#" class="brand-logo center">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-                <a href="#user"><img class="circle" src="#"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
         </div>
-    </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-</ul>
-<!-- End Navbar -->
+    </nav>
+
+    <!-- One Big Row for Law Firm Content -->
+    <div class="row">
+
+        <!-- Column One with Information about Law Firm -->
+        <div class="col m8">
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="#">
+                        </div>
+                        <a href="#user"><img class="circle" src="#"></a>
+                        <a href="#name"><span class="white-text name">John Doe</span></a>
+                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                <li><a href="#!">Second Link</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Subheader</a></li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+        </div>
+
+       <!-- Column Two with Twitter Feed -->
+       <div class="col m4">
+            <a class="twitter-timeline" data-width="300" data-height="700" href="https://twitter.com/TBehlendorf/lists/Immigration-Updates?ref_src=twsrc%5Etfw">Immigration Updates</a> 
+        </div>
+    </div>
+
+    <!-- Script that makes the Twitter API widget be alove in the site -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!-- Footer -->
+    <footer class="page-footer #212121 grey darken-4" id="footer">
+        <div class="container" id="contentFooter">
+            <div class="row">
+                <div class="col s4">
+                    <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5>
+                    <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
+                </div>
+                <!-- Div for Map Input -->
+                <div class="col s3">
+                    <div id="map" class="map"></div>
+                </div>
+                <!-- JS for Map -->
+                <script>
+                    var map = new ol.Map({
+                        target: 'map',
+                        layers: [
+                            new ol.layer.Tile({
+                            source: new ol.source.OSM()
+                            })
+                        ],
+                        view: new ol.View({
+                            center: ol.proj.fromLonLat([-118.478890, 34.155240]),
+                            zoom: 16
+                        })
+                    });
+                </script>
+                <div class="col s3">
+                    <h5 class="white-text center-align">Location</h5>
+                    <p class="grey-text text-lighten-4 center-align">
+                        15840 Ventura Blvd Ste 208<br> 
+                        Encino, CA 91436<br>
+                        Tel. (213) 487-4861 / (213) 487-4862<br> 
+                        Fax. (213) 487-4863
+                    </p>
+                </div>
+                <div class="col s2">
+                    <h5 class="white-text center-align">Links</h5>
+                    <ul>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+            © 2020 Copyright Theodore A. Behlendorf, APC
+            </div>
+        </div>
+    </footer>
     
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="script.js"></script>
 
 </body>
+
 </html>

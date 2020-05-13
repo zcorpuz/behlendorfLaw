@@ -20,6 +20,14 @@ style.css
    font-size: larger;
 }
 
+#aboutContainer{
+    width: 100%;
+}
+
+#firm{
+    height: 304px;
+    width: 100%;
+}
 #contentFooter {
     width: 100%;
 }

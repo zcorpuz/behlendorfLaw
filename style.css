@@ -20,12 +20,20 @@ style.css
    font-size: larger;
 }
 
+#aboutContainer{
+    width: 100%;
+}
+
+#firm{
+    height: 304px;
+    width: 100%;
+}
 #contentFooter {
     width: 100%;
 }
 
 #footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
     right: 0;

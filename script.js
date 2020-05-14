@@ -4,63 +4,72 @@
     var instances = M.Sidenav.init(elems, {});
   });
 // End Navbar Side Menu Mobile Pop Out//
-
 // Contact Page//
 var firstName = document.getElementById("first_name")
 var lastName = document.getElementById("last_name")
 var email = document.getElementById("email")
-
 // Submit Contact Form using Submit Button//
-$(document).ready(function(){
-    $("#formButton").click(function(event){
+$(document).ready(function(){  
+    $(".btn").click(function(event){
         event.preventDefault()
-        var firstName = $("#first_name").val()
-        var lastName = $("#last_name").val()
-        var userEmail = $("#email").val()
-        var userMessage = $(".userText").val()
-        var statusEl = $('.status')
+            var firstName = $("#first_name").val()
+            var lastName = $("#last_name").val()
+            var userEmail = $("#email").val()
+            var userMessage = $(".userText").val()
+            var statusEl = $('.status')
         statusEl.empty()
 // Validating user input fields///
+        var isValid = true;
         if (firstName.length > 2) {
-            $(statusEl).append('<p>email is valid</p>')
-            console.log("firstName is valid");
-        } else {
-            $(statusEl).append('<p>mail is not valid</p>')
-            console.log("firstName is not valid");
+            $(statusEl).append('<p>firstName is valid</p>')
+            isValid = true
+        } else {  
+            $(statusEl).append('<p>firstName is not valid</p>')
+            isValid = false; 
         }
         if (lastName.length > 2) {
-            $(statusEl).append('<p>email is valid</p>')
-            console.log("lastName is valid");
+            $(statusEl).append('<p>lastName is valid</p>')
+            isValid = true;
         } else {
-            $(statusEl).append('<p>mail is not valid</p>')
-            console.log("lastName is not valid");
+            $(statusEl).append('<p>lastName is not valid</p>')
+            isValid = false;
         }
         if (userEmail.length > 5 && userEmail.includes('@') && userEmail.includes('.')){
             $(statusEl).append('<p>email is valid</p>')
-            console.log("email is valid");
+            isValid = true;
         } else {
-            $(statusEl).append('<p>mail is not valid</p>')
-            console.log("email is not valid");
+            $(statusEl).append('<p>email is not valid</p>')
+            isValid = false;
         }
-        if (userMessage.length >= 20){
-            $(statusEl).append('<p>email is valid</p>')
-            console.log("Message is valid");
+        if (userMessage.length >= 10){
+            $(statusEl).append('<p>message is valid</p>')
+            isValid = true;
         } else {
-            $(statusEl).append('<p>mail is not valid</p>')
-            console.log("Message is not valid");
+            $(statusEl).append('<p>message is not valid</p>')
+            isValid = false;
         }
 // Sending contact information through https://elasticemail.com/ //
-                Email.send({
-                    SecureToken : "34dc89ba-06a4-4697-ae91-a7ebfb6cb4a9",
-                    To : 'bgmyhan@gmail.com',
-                    From : 'bgmyhan@gmail.com',
-                    Subject : "A Message From BehlendorfLaw.com 1",
-                    Body : "Name:" + firstName + " " + lastName + " " +"Email: " + " " + userEmail + " " + "Message Contents:" +" " + userMessage
-            
-            }).then(
-              message => alert("Thank you for reaching out to us. A representative from the firm will respond as soon as possible.")
-               )
-        })
-            
+        if (isValid){
+            Email.send({
+                SecureToken : "34dc89ba-06a4-4697-ae91-a7ebfb6cb4a9",
+                To : 'bgmyhan@gmail.com',
+                From : 'bgmyhan@gmail.com',
+                Subject : "A Message From BehlendorfLaw.com 1",
+                Body : "Name:" + firstName + " " + lastName + " " +"Email: " + " " + userEmail + " " + "Message Contents:" + " " + userMessage
+            }).then(()=>{
+                document.getElementById("contactForm").reset
+                // $(document).ready(function(){
+                     $('.modal').modal();
+                });
+          
+            })
+        }        
     })
-// End Contact Form //
+// Pop Up Thank you Modal//
+var contactModal = document.getElementById("contactModal")
+var openModal = document.getElementById("modalBtn")
+var closeModalBtn = document.querySelector("closeBtn")
+function openContactModal(){
+    modal.style.display = "block"
+}
+});

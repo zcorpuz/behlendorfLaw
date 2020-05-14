@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behlendorf Law Offices</title>
     <!-- links to stylesheets & Nav image link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Behlendorf Law Offices</title>
+    <!-- OpenLayers CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
 </head>
 <body>
 <!-- Navbar -->
@@ -77,6 +80,59 @@
       </div>
 </div>       
 </div>    
+
+<!-- Footer -->
+<footer class="page-footer #212121 grey darken-4" id="footer">
+  <div class="container" id="contentFooter">
+    <div class="row">
+      <div class="col s12 m4">
+        <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5>
+        <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
+      </div>
+      <!-- Div for Map Input -->
+      <div class="col s12 m3">
+        <div id="map" class="map"></div>
+      </div>
+      <!-- JS for Map -->
+      <script>
+        var map = new ol.Map({
+          target: 'map',
+          layers: [
+            new ol.layer.Tile({
+            source: new ol.source.OSM()
+            })
+          ],
+          view: new ol.View({
+            center: ol.proj.fromLonLat([-118.478890, 34.155240]),
+            zoom: 16
+          })
+        });
+      </script>
+      <div class="col s12 m3">
+        <h5 class="white-text center-align">Location</h5>
+        <p class="grey-text text-lighten-4 center-align">
+          15840 Ventura Blvd Ste 208<br> 
+          Encino, CA 91436<br>
+          Tel. (213) 487-4861 / (213) 487-4862<br> 
+          Fax. (213) 487-4863
+        </p>
+      </div>
+      <div class="col s12 m2">
+        <h5 class="white-text center-align">Links</h5>
+        <ul>
+          <li class="center-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+          <li class="center-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
+          <li class="center-align"><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container center-align">
+      © 2020 Copyright Theodore A. Behlendorf, APC
+    </div>
+  </div>
+</footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

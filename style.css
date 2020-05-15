@@ -18,6 +18,7 @@ style.css
 }
 .navContainer {
    font-size: larger;
+   
 }
 
 #aboutContainer{
@@ -52,6 +53,86 @@ style.css
     width: 100%;
 }
 
+
+
+
+
+/* Contact Page */
+.contactContainer{
+    background-image: url(images/BelendorfLawContactPage.jpg);
+    height:100%;
+    width:100%;
+    /* content:auto; */
+ 
+  
+
+}
+/* .container{
+    background-color:#121F2A;
+    height:60%;
+    width:60%;
+    opacity: .7;
+    
+} */
+
+.card{
+    background-color: #121F2A;
+    align-content: justify;
+    /* height:60; */
+    /* width:60%;  */
+    opacity: .7; 
+    margin:0px;
+    padding:0px;
+    contain:content;
+    float:right;
+    
+    
+
+}
+#first_name, #last_name, #email, #userText, #status {
+    background-color:whitesmoke;
+    margin: 0px;
+
+ 
+} 
+.btn{
+    margin-right:2px;
+    background-color: #121F2A;
+    /* float:left; */
+}
+
+.status{
+    color:red;
+}
+
+.contactForm{
+    width: 110%;
+    contain:content;
+
+}
+
+/* .inputSection{
+    color:black;
+    background-color:white;
+
+
+}
+
+.contactModal{
+    float:left;
+    float:right; */
+    
+/* } */
+/* .background{
+    position: center;
+
+    margin:1em;
+    padding: 1em 2 em;
+    color: rgb(0, 0, 0);
+    border:0;
+} */
+
+
 /* contact Page modal */
 .modal{
     display:none; 
@@ -62,7 +143,7 @@ style.css
     height:100%;
     width:100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,0.5); */
 }
 .sumSummary{
     text-shadow: 2px 2px 8px black;

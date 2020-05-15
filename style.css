@@ -84,10 +84,21 @@ body {
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
 }
-.sumSummary{
-    text-shadow: 2px 2px 8px black;
+.sumSummaryAbout{
+    text-shadow: 2px 2px 8px rgb(164, 162, 162);
+    line-height: 26px;
 }
-
+.sumSummary{
+    text-shadow: 2px 2px 8px rgb(164, 162, 162);
+}
+.tHeader{
+    text-align: center;
+    color: darkgray;
+}
+h5{
+    text-align: center;
+    text-decoration: underline;
+}
 #terms {
     text-align: center;
     margin: auto;

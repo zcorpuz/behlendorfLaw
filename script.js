@@ -8,7 +8,7 @@
 var firstName = document.getElementById("first_name")
 var lastName = document.getElementById("last_name")
 var email = document.getElementById("email")
-// Submit Contact Form using Submit Button//
+// Submiting Contact Form using Submit Button//
 $(document).ready(function(){  
     $(".btn").click(function(event){
         event.preventDefault()
@@ -50,6 +50,7 @@ $(document).ready(function(){
         }
 // Sending contact information through https://elasticemail.com/ //
         if (isValid){
+           
             Email.send({
                 SecureToken : "34dc89ba-06a4-4697-ae91-a7ebfb6cb4a9",
                 To : 'bgmyhan@gmail.com',
@@ -57,19 +58,20 @@ $(document).ready(function(){
                 Subject : "A Message From BehlendorfLaw.com 1",
                 Body : "Name:" + firstName + " " + lastName + " " +"Email: " + " " + userEmail + " " + "Message Contents:" + " " + userMessage
             }).then(()=>{
-                document.getElementById("contactForm").reset
+
+                document.getElementById("contactForm").reset()
                 // $(document).ready(function(){
-                     $('.modal').modal();
                 });
-          
-            })
+            // })
+            $('.modal').modal();
         }        
     })
-// Pop Up Thank you Modal//
-var contactModal = document.getElementById("contactModal")
-var openModal = document.getElementById("modalBtn")
-var closeModalBtn = document.querySelector("closeBtn")
-function openContactModal(){
-    modal.style.display = "block"
-}
+// Posting Pop Up Thank you Modal//
+// var contactModal = document.getElementById("contactModal")
+// var openModal = document.getElementById("modalBtn")
+// var closeModalBtn = document.querySelector("closeBtn")
+// function modal(){
+//     modal.style.display = "block"
+// }
 });
+// End Contact Page

@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     flex: 1 0 auto;
 }
+
 /* Navigation */
 style.css
   .navBG {
@@ -13,17 +14,14 @@ style.css
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    
+    position: relative;   
 }
 .navContainer {
    font-size: larger;
 }
-
 #contentFooter {
     width: 100%;
 }
-
 #footer {
     position: absolute;
     width: 100%;
@@ -31,18 +29,17 @@ style.css
     right: 0;
     left: 0;
 }
-
 .row {
     margin-bottom: 0;
 }
-
 .map {
     height: 200px;
     width: 100%;
 }
+
 /* contact Page modal */
 .modal{
-    /* display:none;  */
+    display:none; 
      position: fixed;
     z-index:1;
     top:0;

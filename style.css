@@ -38,12 +38,21 @@ style.css
     width: 100%;
 }
 #footer {
+    background-color: #121F2A;
     position: relative;
     width: 100%;
     bottom: 0;
     right: 0;
     left: 0;
 }
+
+#copyright {
+    width: 100%;
+    text-align: center;
+    margin-left: 25px;
+}
+
+
 .row {
     margin-bottom: 0;
 }
@@ -55,7 +64,7 @@ style.css
 /* contact Page modal */
 .modal{
     display:none; 
-     position: fixed;
+    position: fixed;
     z-index:1;
     top:0;
     left:0;
@@ -66,4 +75,10 @@ style.css
 }
 .sumSummary{
     text-shadow: 2px 2px 8px black;
+}
+
+#terms {
+    text-align: center;
+    margin: auto;
+    width: 90%;
 }

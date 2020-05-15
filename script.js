@@ -60,18 +60,9 @@ $(document).ready(function(){
             }).then(()=>{
 
                 document.getElementById("contactForm").reset()
-                // $(document).ready(function(){
                 });
-            // })
             $('.modal').modal();
         }        
     })
-// Posting Pop Up Thank you Modal//
-// var contactModal = document.getElementById("contactModal")
-// var openModal = document.getElementById("modalBtn")
-// var closeModalBtn = document.querySelector("closeBtn")
-// function modal(){
-//     modal.style.display = "block"
-// }
 });
 // End Contact Page

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behlendorf Law Offices</title>
+    <title>Meet Our Team | Behlendorf Law Offices</title>
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Local StyleSheet -->
@@ -16,18 +16,19 @@
 </head>
 
 <body>
-<!-- NavBar -->
+    <!-- Navbar -->
     <nav class = "navBG">
         <div class = "navContainer">
             <div class="nav-wrapper">
-                <img src="#" class="brand-logo center">
-                    <a href="#" data-target="slide-out" class="sidenav-trigger"></a>
-                        <i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                <a href="index.html"><img src="images/728x90 color_white.png" class="brand-logo left" id = "banner"></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class = "menuItem">Home</a></li>
+                    <li class = "borders">|</li>
+                    <li class="active"><a href="about.html" class = "menuItem">About </a></li>
+                    <li class = "borders">|</li>
+                    <li><a href="contact.html" class = "menuItem">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -102,12 +103,15 @@
             <div class="row">
                 <!-- Div for About Company -->
                 <div class="col s12 m4">
-                    <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5>
-                    <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
+                    <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5><br>
+                    <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters. <br> We represent clients anywhere within or outside the U.S.</p>
                 </div>
                 <!-- Div for Map Input -->
                 <div class="col s12 m3">
-                    <div id="map" class="map"></div>
+                    <div id="map" class="map"></div><br>
+                    <div class="container" id="copyright">
+                        © 2020 Copyright Theodore A. Behlendorf, APC
+                    </div>
                 </div>
                 <!-- JS for Map -->
                 <script>
@@ -144,12 +148,6 @@
                         <li class="center-align"><a class="grey-text text-lighten-3" href="terms.html" target="_blank">Terms of Use</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <!-- Copyright -->
-        <div class="footer-copyright">
-            <div class="container center-align" id="copyright">
-            © 2020 Copyright Theodore A. Behlendorf, APC
             </div>
         </div>
     </footer>

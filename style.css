@@ -7,14 +7,14 @@ body {
     flex: 1 0 auto;
 }
 
+/* Navigation */
 style.css
   .navBG {
     background-image: url("#");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    
+    position: relative;   
 }
 .navContainer {
    font-size: larger;
@@ -37,7 +37,6 @@ style.css
 #contentFooter {
     width: 100%;
 }
-
 #footer {
     position: relative;
     width: 100%;
@@ -45,16 +44,26 @@ style.css
     right: 0;
     left: 0;
 }
-
 .row {
     margin-bottom: 0;
 }
-
 .map {
     height: 200px;
     width: 100%;
 }
 
+/* contact Page modal */
+.modal{
+    display:none; 
+     position: fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
 .sumSummary{
     text-shadow: 2px 2px 8px black;
 }

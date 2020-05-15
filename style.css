@@ -54,14 +54,13 @@ body {
     position: relative;
     width: 100%;
     bottom: 0;
-    right: 0;
-    left: 0;
 }
 
 #copyright {
     width: 100%;
-    text-align: center;
-    margin-left: 25px;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 3px;
 }
 
 

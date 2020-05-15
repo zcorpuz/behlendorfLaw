@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behlendorf Law Offices</title>
     <!-- links to stylesheets & Nav image link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -10,8 +11,6 @@
     <!-- OpenLayers CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
-
-    <title>Behlendorf Law Offices</title>
 </head>
 
 <body>
@@ -30,8 +29,60 @@
         </div>
     </nav>
 
-    <!-- One Big Row for Law Firm Content -->
-    <div class="row">
+    <!--Main content-->
+    <div class = "container">
+        <div class = "row">
+            <div class = "col s8">
+                    <div class="col s12 m6">
+                            <div class="sumSummary">
+                              <h4>About Us</h4>  
+                              <p>We are a Los Angeles-based law firm focused exclusively on handling immigration cases, representing both individual and corporate clients within and outside the United States. Theodore Behlendorf and Maria Sedano have more than 20 years of experience practicing all aspects of immigration law. </p>
+                            </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="sumSummary">
+                            <h4>Scope of Work</h4>
+                              <p> Our services include assisting clients in obtaining nonimmigrant visas and permanent resident (green card) status for themselves, their families, or for their employees. 
+                              </p>
+                              <ul>
+                                  <li><u>NON IMMIGRANT - TEMPORARY STATUS</u></li>
+                                  <li>B, E, F, H1B, H2A, H2B, I, J, K, L, M, O, P, Q, R, TN, Dependent, and others categories</li>
+                                  <li><u>IMMIGRANT - PERMANENT STATUS - EMPLOYMENT BASED</u></li>
+                                  <li>EB1, EB2,EB3,EB4,EB5</li>
+                                  <li><u>NON IMMIGRANT - PERMANENT STATUS - FAMILY BASED</u></li>
+                                  <li>First, Second, Third, and Fourth Preference</li>
+                                  <li><u>GREEN CARD LOTTERY, ASYLUM/REFUGEE, CITIZENSHIP, CONSULAR PRACTICE, AND OTHERS</u></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--twitter call-->
+                <div class = "col s4">
+                    <h3> 
+                        Twitter
+                    </h3>
+                    <div class="col s12">
+                        <div class="twitter">
+    
+                    <!-- Column Two with Twitter Feed -->
+                    <div class="col m4">
+                        <a class="twitter-timeline" data-width="300" data-height="700" href="https://twitter.com/TBehlendorf/lists/Immigration-Updates?ref_src=twsrc%5Etfw">Immigration Updates</a> 
+                    </div>
+    
+                     <!-- Script that makes the Twitter API widget be alove in the site -->
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+                        </div>
+                    </div>
+                </div>
+                <!--end of twitter call-->
+            </div>
+        </div>
+            
+            </div>
+        </div>
+    </div> 
+
 
         <!-- Column One with Information about Law Firm -->
         <div class="col m8">
@@ -54,25 +105,17 @@
             </ul>
         </div>
 
-       <!-- Column Two with Twitter Feed -->
-       <div class="col m4">
-            <a class="twitter-timeline" data-width="300" data-height="700" href="https://twitter.com/TBehlendorf/lists/Immigration-Updates?ref_src=twsrc%5Etfw">Immigration Updates</a> 
-        </div>
-    </div>
-
-    <!-- Script that makes the Twitter API widget be alove in the site -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
     <!-- Footer -->
     <footer class="page-footer #212121 grey darken-4" id="footer">
         <div class="container" id="contentFooter">
             <div class="row">
-                <div class="col s4">
+                <!-- Div for About Company -->
+                <div class="col s12 m4">
                     <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5>
                     <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters.</p>
                 </div>
                 <!-- Div for Map Input -->
-                <div class="col s3">
+                <div class="col s12 m3">
                     <div id="map" class="map"></div>
                 </div>
                 <!-- JS for Map -->
@@ -90,7 +133,8 @@
                         })
                     });
                 </script>
-                <div class="col s3">
+                <!-- Div for Location Info -->
+                <div class="col s12 m3">
                     <h5 class="white-text center-align">Location</h5>
                     <p class="grey-text text-lighten-4 center-align">
                         15840 Ventura Blvd Ste 208<br> 
@@ -99,24 +143,30 @@
                         Fax. (213) 487-4863
                     </p>
                 </div>
-                <div class="col s2">
+                <!-- Div for Links -->
+                <div class="col s12 m2">
                     <h5 class="white-text center-align">Links</h5>
                     <ul>
                         <li class="center-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
                         <li class="center-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
-                        <li class="center-align"><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!-- Copyright -->
         <div class="footer-copyright">
             <div class="container center-align">
             © 2020 Copyright Theodore A. Behlendorf, APC
             </div>
         </div>
     </footer>
-    
+
+<!-- Materialize JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Local JS -->
 <script src="script.js"></script>
 
 </body>

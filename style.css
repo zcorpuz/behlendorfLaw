@@ -19,11 +19,26 @@ style.css
 .navContainer {
    font-size: larger;
 }
+
+#aboutContainer{
+    width: 100%;
+}
+
+#maria{
+    height: 304px;
+    width: 100%;
+}
+
+#firm{
+    height: 304px;
+    width: 100%;
+}
+
 #contentFooter {
     width: 100%;
 }
 #footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
     right: 0;
@@ -49,5 +64,6 @@ style.css
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
 }
-
- 
+.sumSummary{
+    text-shadow: 2px 2px 8px black;
+}

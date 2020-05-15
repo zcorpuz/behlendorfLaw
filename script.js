@@ -24,31 +24,31 @@ $(document).ready(function(){
 // Validating user input fields///
         var isValid = true;
         if (firstName.length > 2) {
-            $(statusEl).append('<p>firstName is valid</p>')
+            // $(statusEl).append('<p>firstName is valid</p>')
             isValid = true
         } else {  
-            $(statusEl).append('<p>firstName is not valid</p>')
+            $(statusEl).append('<p>Your message may not have sent. Please type a longer name</p>')
             isValid = false; 
         }
         if (lastName.length > 2) {
-            $(statusEl).append('<p>lastName is valid</p>')
+            // $(statusEl).append('<p>lastName is valid</p>')
             isValid = true;
         } else {
-            $(statusEl).append('<p>lastName is not valid</p>')
+            $(statusEl).append('<p>Your message may not have sent. Please type a longer name</p>')
             isValid = false;
         }
         if (userEmail.length > 5 && userEmail.includes('@') && userEmail.includes('.')){
-            $(statusEl).append('<p>email is valid</p>')
+            // $(statusEl).append('<p>email is valid</p>')
             isValid = true;
         } else {
-            $(statusEl).append('<p>email is not valid</p>')
+            $(statusEl).append('<p>Your message may not have sent. Please type a proper email.</p>')
             isValid = false;
         }
         if (userMessage.length >= 10){
-            $(statusEl).append('<p>message is valid</p>')
+            // $(statusEl).append('<p>message is valid</p>')
             isValid = true;
         } else {
-            $(statusEl).append('<p>message is not valid</p>')
+            $(statusEl).append('<p>Your message may not have sent.Please type a longer message</p>')
             isValid = false;
         }
 // Sending contact information through https://elasticemail.com/ //

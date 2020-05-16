@@ -24,7 +24,7 @@ body {
 .menuItem {
     font-size: 20px;
     color: whitesmoke;
-    font-weight: bold;
+    font-family: 'Playfair Display', serif;
 }
 
 .borders{
@@ -84,6 +84,16 @@ body {
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
 }
+.contactModal {
+    margin-left: 195px;
+    margin-bottom: 25px;
+    background-color: #FFF;
+}
+#submitBtn{
+    background-color: #FFF;
+    color: rgba(0,0,0,0.5);
+
+}
 .sumSummaryAbout{
     text-shadow: 2px 2px 8px rgb(164, 162, 162);
     line-height: 26px;
@@ -95,10 +105,13 @@ body {
     text-align: center;
     color: darkgray;
 }
-h5{
-    text-align: center;
-    text-decoration: underline;
+h4{
+    font-family: 'Playfair Display', serif;
 }
+h5{
+    font-family: 'Playfair Display', serif;
+}
+
 #terms {
     text-align: center;
     margin: auto;

@@ -61,9 +61,7 @@ $(document).ready(function(){
                 Body : "Name:" + firstName + " " + lastName + " " +"Email: " + " " + userEmail + " " + "Message Contents:" + " " + userMessage
             }).then(()=>{
                 document.getElementById("contactForm").reset()
-                // $(document).ready(function(){
                 });
-            // })
             $('.modal').modal();
         }        
     })

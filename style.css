@@ -6,6 +6,9 @@ body {
     flex-direction: column;
     flex: 1 0 auto;
 }
+p{
+    text-align: justify;
+}
 /* Navigation */
 .navBG {
     position: relative;  
@@ -83,15 +86,13 @@ body {
 }
 .modal{
     display:none; 
-     position: fixed;
+     position: relative;
     z-index:1;
     height:100%;
     width:100%;
     overflow: auto;
-    /* background-color: rgba(0,0,0,0.5); */
+    background-color: rgba(0,0,0,0.5);
 }
-
-
 .contactMargin{
     margin:7px;
 }
@@ -119,6 +120,7 @@ body {
     color: rgba(0,0,0,0.5);
 
 }
+/* footer */
 .sumSummaryAbout{
     text-shadow: 2px 2px 8px rgb(164, 162, 162);
     line-height: 26px;
@@ -142,8 +144,6 @@ h5{
     margin: auto;
     width: 90%;
 }
-
-/* Footer */
 #contentFooter {
     width: 100%;
 }

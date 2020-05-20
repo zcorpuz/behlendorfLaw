@@ -1,4 +1,4 @@
-
+/* Main */
 body {
     position: relative;
     display: flex;
@@ -6,6 +6,10 @@ body {
     flex-direction: column;
     flex: 1 0 auto;
 }
+p{
+    text-align: justify;
+}
+/* Navigation */
 .navBG {
     position: relative;  
     background-color: #121F2A;
@@ -35,11 +39,11 @@ body {
     font-size: 25px;
     color: whitesmoke;
 }
-
+/* Home Page */
 #aboutContainer{
     width: 100%;
 }
-
+/* about Page */
 #maria{
     height: 304px;
     width: 100%;
@@ -49,7 +53,97 @@ body {
     height: 304px;
     width: 100%;
 }
+/* Contact Page */
+.contactContainer{
+    background: url(images/contactPageBG.jpg);
+    max-width: fill;
+    max-height: fill;
+}
+.card1{
+    background-color: #121F2A;
+    box-sizing:border-box;
+    align-content: justify;
+    margin:0px;
+    padding:0px;
+    float:right;
 
+}
+.contactFormHeader{
+    text-align: center;
+}
+#first_name, #last_name, #email, #userText, #status {
+    background-color:whitesmoke;
+} 
+
+.btn{
+    background-color: rgba(100, 116, 129, 0.815);
+    border: 1px;
+    width: 100%;
+    text-shadow: 2px 2px 8px black;
+}
+.status{
+    color:red;
+}
+.modal{
+    display:none; 
+     position: relative;
+    z-index:1;
+    height:100%;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.contactMargin{
+    margin:7px;
+}
+/* contact Page modal */
+.modal{
+    /* display:none;  */
+    position: fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.contactModal {
+    
+    background-color: #FFF;
+    margin-bottom: 2em;
+    box-shadow: px 0px 0px  black;
+    
+}
+#submitBtn{
+    background-color: #FFF;
+    color: rgba(0,0,0,0.5);
+
+}
+/* footer */
+.sumSummaryAbout{
+    text-shadow: 2px 2px 8px rgb(164, 162, 162);
+    line-height: 26px;
+}
+.sumSummary{
+    text-shadow: 2px 2px 8px rgb(164, 162, 162);
+}
+.tHeader{
+    text-align: center;
+    color: darkgray;
+}
+h4{
+    font-family: 'Playfair Display', serif;
+}
+h5{
+    font-family: 'Playfair Display', serif;
+}
+
+#terms {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
 #contentFooter {
     width: 100%;
 }
@@ -79,51 +173,4 @@ body {
 .container2 {
     margin-top: 70px;
     margin-bottom: 60px;
-}
-
-/* contact Page modal */
-.modal{
-    display:none; 
-    position: fixed;
-    z-index:1;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-}
-.contactModal {
-    margin-top: 5px;
-    margin-left: 225px;
-    margin-bottom: 25px;
-    background-color: #FFF;
-}
-#submitBtn{
-    background-color: #FFF;
-    color: rgba(0,0,0,0.5);
-
-}
-.sumSummaryAbout{
-    text-shadow: 2px 2px 8px rgb(164, 162, 162);
-    line-height: 26px;
-}
-.sumSummary{
-    text-shadow: 2px 2px 8px rgb(164, 162, 162);
-}
-.tHeader{
-    text-align: center;
-    color: darkgray;
-}
-h4{
-    font-family: 'Playfair Display', serif;
-}
-h5{
-    font-family: 'Playfair Display', serif;
-}
-
-#terms {
-    text-align: center;
-    margin: auto;
-    width: 90%;
 }

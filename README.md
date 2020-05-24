@@ -39,5 +39,9 @@ The map displays the location of the law firm's office and is found in the `foot
 The contact form has a `submit` button so that the user can send his/her/their inquiries to the law firm, when all parts of the form have been completed fully. The information gathered from the form in the `submit` button will then be sent through `https://elasticemail.com/` to the recipient. 
 
 
-## Acknowledgment
+## Acknowledgments
 This website was done with a collaborative effort from Brandon Myhan, Carolina Aldana, Cattleya Pia, Maira Garcia, and Zach Corpuz.
+
+
+## Deployment
+The deployed site for this project is: https://zcorpuz.github.io/behlendorfLaw/.

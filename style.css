@@ -5,13 +5,20 @@ body {
     min-height: 100vh;
     flex-direction: column;
     flex: 1 0 auto;
+    font-family: 'Playfair Display', serif;
+    background-color: lightgray;
 }
-p{
+
+p {
     text-align: justify;
 }
+
+div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /* Navigation */
 .navBG {
-    position: relative;  
     background-color: #121F2A;
 }
 
@@ -29,73 +36,226 @@ p{
     margin-top: 2px;
 }
 
+#mobile-nav-logo {
+    display: none;
+}
+
 .menuItem {
     font-size: 20px;
     color: whitesmoke;
     font-family: 'Playfair Display', serif;
+    ;
 }
 
-.borders{
+.borders {
     font-size: 25px;
     color: whitesmoke;
 }
+
+
 /* Home Page */
-#aboutContainer{
-    width: 100%;
-}
-/* about Page */
-#maria{
-    height: 304px;
-    width: 100%;
+#home{
+    background-color: white;
 }
 
-#firm{
-    height: 304px;
-    width: 100%;
+#home-image {
+    margin-top: 5px;
+    max-width: 100%;
+    border-style: double;
+    border-color: #D9A537;
+    border-width: 6px;
 }
+
+#home-title {
+    margin-bottom: 30px;
+}
+
+#home-title, #type-of-work {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+#home-info {
+    margin: 0 4px;
+}
+
+#about-btn {
+    background-color: #d8a43b;
+    margin-bottom: 20px;
+}
+
+#language {
+    list-style-type: square;
+}
+
+.tHeader {
+    text-align: center;
+}
+
+#twitter {
+    background-color:  #d1cabd;
+    border-radius: 5px;
+    padding: 1%;
+    margin-left: 40px;
+}
+
+hr {
+    max-width: 80%;
+}
+
+#type-of-work {
+    margin-top: 30px;
+}
+
+#Div1, #Div3, #Div5, #Div7 {
+    display: block;
+    background: #121f2a;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#Div2, #Div4, #Div6, #Div8 {
+    display: none;
+    background: #d8a43b;
+    font-size: 20px;
+}
+
+.divs {
+    max-width: 90%;
+    height: 400px;
+    border: 1px solid #000;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h6 {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.tasks {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.button-switch {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: #d1cabd;
+    background-color: #d1cabd;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+#contact-btn {
+    max-width: 400px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d8a43b ;
+}
+
+.body {
+    padding: 5px;
+    background-color: lightgray;
+}
+
+/* about Page */
+#aboutContainer {
+    background-color: white;
+}
+
+.about-title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#firm {
+    height: 310px;
+}
+
+.card-content {
+    background-color: #121F2A;
+}
+
+#theo, #maria, #firm-name {
+    font-size: 22px;
+}
+
+#firm-content {
+    background-color: #d8a43b;
+}
+
+#firm-card {
+    margin-right: 5px;
+}
+
+
 /* Contact Page */
-.contactContainer{
+.contactContainer {
     background: url(images/contactPageBG.jpg);
     max-width: fill;
     max-height: fill;
 }
-.card1{
+
+.card1 {
     background-color: #121F2A;
     box-sizing:border-box;
     align-content: justify;
     margin:0px;
     padding:0px;
     float:right;
-
 }
-.contactFormHeader{
+
+.contactFormHeader {
     text-align: center;
 }
+
 #first_name, #last_name, #email, #userText, #status {
     background-color:whitesmoke;
 } 
 
-.btn{
+.btn {
     background-color: rgba(100, 116, 129, 0.815);
     border: 1px;
     width: 100%;
     text-shadow: 2px 2px 8px black;
 }
-.status{
+
+.status {
     color:red;
 }
-.modal{
+
+.modal {
     display:none; 
-     position: relative;
+    position: relative;
     z-index:1;
     height:100%;
     width:100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
 }
-.contactMargin{
+
+.contactMargin {
     margin:7px;
 }
+
 /* contact Page modal */
 .modal{
     /* display:none;  */
@@ -108,45 +268,30 @@ p{
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
 }
+
 .contactModal {
-    
     background-color: #FFF;
     margin-bottom: 2em;
     box-shadow: px 0px 0px  black;
     
 }
+
 #submitBtn{
     background-color: #FFF;
     color: rgba(0,0,0,0.5);
-
 }
+
 /* footer */
-.sumSummaryAbout{
-    text-shadow: 2px 2px 8px rgb(164, 162, 162);
-    line-height: 26px;
-}
-.sumSummary{
-    text-shadow: 2px 2px 8px rgb(164, 162, 162);
-}
-.tHeader{
-    text-align: center;
-    color: darkgray;
-}
-h4{
-    font-family: 'Playfair Display', serif;
-}
-h5{
-    font-family: 'Playfair Display', serif;
-}
-
 #terms {
     text-align: center;
     margin: auto;
     width: 90%;
 }
+
 #contentFooter {
     width: 100%;
 }
+
 #footer {
     background-color: #121F2A;
     position: relative;
@@ -161,10 +306,10 @@ h5{
     margin-left: 3px;
 }
 
-
 .row {
     margin-bottom: 0;
 }
+
 .map {
     height: 200px;
     width: 100%;
@@ -173,4 +318,39 @@ h5{
 .container2 {
     margin-top: 70px;
     margin-bottom: 60px;
+}
+
+@media screen and (max-width: 900px) {
+
+    #banner {
+        display: none;
+    }
+    
+    #mobile-nav-logo {
+        display: block;
+    }
+
+    #twitter {
+        margin: 5px;
+        max-width: 95%;
+    }
+
+    .button-switch {
+        margin-bottom: 20px;
+    }
+
+    #contact-btn {
+        margin-top: 10px;
+        max-width: 300px;
+        line-height: 15px;
+        padding: 5px;
+    }
+
+    #theo, #maria, #firm-name {
+        font-size: 18px;
+    }
+
+    #firm-card {
+        margin: 5px;
+    }    
 }

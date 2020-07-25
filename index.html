@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behlendorf Law Offices</title>
+    <link rel="icon" type="image/ico" href="./images/48x48 gold blue.png">
+
+    <title>Home | Behlendorf Law Offices</title>
     <!-- links to stylesheets & Nav image link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -15,70 +17,240 @@
 
 <body>
     <!-- Navbar -->
-    <nav class = "navBG">
-        <div class = "navContainer">
-            <div class="row">
-                <div class="col s12">
-                    <div class="nav-wrapper">
-                    <a href="index.html"><img src="images/728x90 color_white.png" class="brand-logo left" id = "banner"></a>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="index.html" class = "menuItem">Home</a></li>
-                        <li class = "borders">|</li>
-                        <li><a href="about.html" class = "menuItem">About </a></li>
-                        <li class = "borders">|</li>
-                        <li><a href="contact.html" class = "menuItem">Contact</a></li>
-                    </ul>
-                </div>    
-            </div>
+    <nav class="navBG">
+        <div class="nav-wrapper">
+            <a href="index.html"><img src="images/728x90 color_white.png" class="brand-logo left" id="banner"></a>
+
+            <a href="index.html"><img src="images/48x48 gold blue.png" class="brand-logo center" id="mobile-nav-logo"></a>
+
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html" class="menuItem">Home</a></li>
+                <li class = "borders">|</li>
+                <li><a href="about.html" class="menuItem">About</a></li>
+                <li class = "borders">|</li>
+                <li><a href="contact.html" class="menuItem">Contact</a></li>
+            </ul>
         </div>
     </nav>
-
-    <!--Main content-->
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m8 l9"> 
-        <div class="sumSummaryAbout">
-          <h4>About Us</h4>  
-            <p>We are Theodore A. Behlendorf an Immigration & Naturalization firm based in Los Angeles. Our focused exclusively on handling immigration cases, representing both individual and corporate clients within and outside the United States. Theodore Behlendorf and Maria Sedano have more than 20 years of experience practicing all aspects of immigration law.</p>
-        </div>
-        <div class="sumSummary">
-          <h5>Scope of Work</h5>
-            <p> Our services include assisting clients in obtaining nonimmigrant visas and permanent resident (green card) status for themselves, their families, and for their employees. The Law Offices represent clients from all over the United States and the world. We are fluent English, Tagalog, Cebuano, Spanish, Mandarin, and Russian. </p>
-            <ul>
-                <li><u>NON IMMIGRANT - TEMPORARY STATUS</u></li>
-                <li>B, E, F, H1B, H2A, H2B, I, J, K, L, M, O, P, Q, R, TN, Dependent, and Others Categories</li><br>
-                <li><u>NON IMMIGRANT - PERMANENT STATUS - FAMILY BASED</u></li>
-                <li>First, Second, Third, and Fourth Preference</li><br>
-                <li><u>IMMIGRANT - PERMANENT STATUS - EMPLOYMENT BASED</u></li>
-                <li>EB1, EB2, EB3, EB4, EB5</li><br>
-                <li><u>GREEN CARD LOTTERY, ASYLUM/REFUGEE, CITIZENSHIP, CONSULAR PRACTICE, AND OTHERS</u></li>
-            </ul>
-      </div>
-      </div>  
-      <div class="col s12 m4 l3"> 
-        <div class = "col s12">
-          <div class="tHeader">
-            <h7><hr><em>Twitter's Live Feed</em></h7><hr>
-          </div>
-          <!-- Column Two with Twitter Feed -->
-          <div class="col m4">
-              <a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/TBehlendorf/lists/Immigration-Updates?ref_src=twsrc%5Etfw">Immigration Updates</a> 
-          </div>
-
-           <!-- Script that makes the Twitter API widget be alove in the site -->
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-              </div>
-          </div>
-      </div>
-      </div>
+    
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+            
+    <!-- Home Content-->
+    <div class="container">
+        <img id="home-image" src="./images/index-banner.png">
     </div>
-  </div>      
+    
+    <div id="home" class="container">
+
+        <!-- Title of Page -->
+        <h4 id="home-title">Welcome to the Law Offices of Theodore A. Behlendorf</h4>
+       
+        <!-- Row with Twitter Feed -->
+        <div class="row">
+            <div id="home-info" class="col s12 m8 l8"> 
+
+                <!-- Summary of Work -->
+                <h5>Who Are We?</h5>  
+                <p>We are an immigration law firm based in Los Angeles. Our focus is exclusively on handling immigration cases, representing both individual and corporate clients within and outside the United States. Theodore Behlendorf and Maria Sedano each have more than 20 years of experience practicing all aspects of immigration law.</p>
+                
+                <!-- 'About' button -->
+                <a href="about.html" id="about-btn" class="btn">Click to Meet the Team</a>
+
+                <!-- Scope of Work -->
+                <h5>Our Scope of Work</h5>
+                <p> Our services include assisting clients in obtaining nonimmigrant visas and permanent resident (green card) status for themselves, their families, and their employees. The Law Offices represent clients from all over the United States and the world. We are also fluent in the following languages: </p>
+
+                <div class="row">
+                    <ul id="language">
+                        <div class="col s2"></div>
+                        <div class="col s3">
+                            <li>English</li>
+                            <li>Tagalog</li>
+                        </div>
+                        <div class="col s3">
+                            <li>Cebuano</li>
+                            <li>Spanish</li>
+                        </div>
+                        <div class="col s3">
+                            <li>Mandarin</li>
+                            <li>Russian</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Twitter Column -->
+            <div class="col s12 m3 l3" id="twitter"> 
+                <div class="tHeader">
+                    <h7><hr><em>Twitter's Live Feed</em></h7><hr>
+                </div>
+
+                <!-- Twitter Feed -->
+                <a class="twitter-timeline" data-width="500" data-height="350" href="https://twitter.com/TBehlendorf/lists/Immigration-Updates?ref_src=twsrc%5Etfw">Immigration Updates</a> 
+
+                <!-- Script that makes the Twitter API widget be alove in the site -->
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>  
+
+        <br>
+        <hr>
+
+        <h5 id="type-of-work">Click on the buttons below to reveal what we work on for each category.</h5>
+
+        <!-- Row Three with Buttons and Divs -->
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div id="Div1" class="divs">
+                    <br><br><br><br>
+                    Non-Immigrant: 
+                    <br> 
+                    Temporary Status
+                </div>
+
+                <div id="Div2" class="divs">
+                    <h6>Exchange/change visa status to...</h6>
+                    <div class="tasks">
+                        <li>B-1/B-2</li>
+                        <li>E-1, E-2, and E-3</li>
+                        <li>F</li>
+                        <li>H-1B1 and H-1B</li>
+                        <li>EB 5 for Immigrant investors</li>
+                        <li>L-1A/B </li>
+                        <li>O-1A/B</li>
+                        <li>P-1A/N, P-2 and P-3</li>
+                        <li>R-1,</li>
+                        <li>TN</li>
+                        <li>U</li>
+                        <li style="list-style-type: none;">for Principal applicants and their dependents</li>
+                    </div>
+                </div>  
+                <input id="Button1" class="button-switch" type="button" value="View" onclick="switchVisible();"/>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div id="Div3" class="divs">
+                    <br><br><br>
+                    Immigrant - Permanent Status:
+                    <br> 
+                    Employment Based
+                </div>
+
+                <div id="Div4" class="divs">
+                    <div class="tasks">
+                        <li>EB 1 / EB 1A / EB 1C</li>
+                        <li> EB 2 with/out NIW</li>
+                        <li>EB 3</li>
+                        <li>EB 4 for Religious Workers</li>
+                        <li>EB 5 Immigrant investors</li>
+                        <li>Schedule A petitions </li>
+                        <li style="list-style-type: none;">and labor certifications</li>
+                        <li style="list-style-type: none;">through PERM</li>
+                    </div>
+                </div>    
+                <input id="Button2" class="button-switch" type="button" value="View" onclick="switchVisible2();"/>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div id="Div5" class="divs">
+                    <br><br><br>
+                    Immigrant - Permanent Status: Family-Based
+                </div>
+
+                <div id="Div6" class="divs">
+                    <div class="tasks">
+                        <li>First, Second, Third, and Fourth Preference</li>
+                        <li>K-1 and K-3 visas</li>
+                        <li>Immigrant...</li>
+                        <li>including adopted children and children born out of wedlock</li>
+                    </div>
+                </div>
+                <input id="Button3" class="button-switch" type="button" value="View" onclick="switchVisible3();"/>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div id="Div7" class="divs">
+                    <br><br><br><br>
+                    Other
+                </div>
+                
+                <div id="Div8" class="divs">
+                    <div class="tasks">
+                        <li>Green Card Lottery</li>
+                        <li>DACA</li>
+                        <li>Asylum/Refugee</li>
+                        <li>Citizenship</li>
+                        <li>Hardship Waivers</li>
+                        <li>204(L)</li>
+                        <li>CSPA Considerations</li>
+                        <li>Consular Practice</li>
+                    </div>
+                </div>
+                <input id="Button4" class="button-switch" type="button" value="View" onclick="switchVisible4();"/>
+            </div>
+        </div>
+            
+        <br>
+        
+        <!-- 'Contact' button -->
+        <a href="contact.html" id="contact-btn" class="btn">Click to Contact us for a FREE Consultation</a>
+  
+        <br>
+
+        <div class="body"></div>
+       
+        <script>
+            function switchVisible() {
+    	        var div1 = document.getElementById('Div1');
+    	        var div2 = document.getElementById('Div2');
+    
+                if (div1 !== undefined && div2 !== undefined) {
+    	            div1.style.display = div2.style.display === '' ? 'none' : div2.style.display === 'none' ? 'none' : 'block';
+    	            div2.style.display = div1.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+
+            function switchVisible2() {
+    	        var div3 = document.getElementById('Div3');
+    	        var div4 = document.getElementById('Div4');
+    	
+                if (div3 !== undefined && div4 !== undefined) {
+    	            div3.style.display = div4.style.display === '' ? 'none' : div4.style.display === 'none' ? 'none' : 'block';
+                    div4.style.display = div3.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+
+            function switchVisible3() {
+    	        var div5 = document.getElementById('Div5');
+                var div6 = document.getElementById('Div6');
+    	
+                if (div5 !== undefined && div6 !== undefined) {
+    	            div5.style.display = div6.style.display === '' ? 'none' : div6.style.display === 'none' ? 'none' : 'block';
+    	            div6.style.display = div5.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+
+            function switchVisible4() {
+    	        var div7 = document.getElementById('Div7');
+                var div8 = document.getElementById('Div8');
+	
+                if (div7 !== undefined && div8 !== undefined) {
+    	            div7.style.display = div8.style.display === '' ? 'none' : div8.style.display === 'none' ? 'none' : 'block';
+    	            div8.style.display = div7.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+        </script>
+    </div>
 
     <!-- Footer -->
     <footer class="page-footer" id="footer">
-        <div class="container" id="contentFooter">
+        <div id="contentFooter">
             <div class="row">
                 <!-- Div for About Company -->
                 <div class="col s12 m4">
@@ -131,12 +303,12 @@
         </div>
     </footer>
 
-<!-- Materialize JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<!-- Local JS -->
-<script src="script.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Local JS -->
+    <script src="script.js"></script>
 
 </body>
 

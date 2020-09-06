@@ -320,6 +320,12 @@ h6 {
     margin-bottom: 60px;
 }
 
+@media screen and (max-width: 1200px) {
+    #theo-image, #maria-image, #firm {
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 900px) {
 
     #banner {

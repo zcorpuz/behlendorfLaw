@@ -55,16 +55,17 @@ div {
 
 /* Home Page */
 #home{
+    margin-top: 10px;
     background-color: white;
 }
 
-#home-image {
+/* #home-image {
     margin-top: 5px;
     max-width: 100%;
     border-style: double;
     border-color: #D9A537;
     border-width: 6px;
-}
+} */
 
 #home-title {
     margin-bottom: 30px;

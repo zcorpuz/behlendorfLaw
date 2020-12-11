@@ -4,6 +4,7 @@
     var instances = M.Sidenav.init(elems, {});
   });
 // End Navbar Side Menu Mobile Pop Out//
+
 // Contact Page//
 var firstName = document.getElementById("first_name")
 firstName.className = "userInput"

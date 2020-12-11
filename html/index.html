@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./images/48x48 gold blue.png">
+
+    <title>Home | Behlendorf Law Offices</title>
+    <!-- links to stylesheets & Nav image link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- OpenLayers CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navBG">
+        <div class="nav-wrapper">
+            <a href="index.html"><img src="images/728x90 color_white.png" class="brand-logo left" id="banner"></a>
+
+            <a href="index.html"><img src="images/48x48 gold blue.png" class="brand-logo center" id="mobile-nav-logo"></a>
+
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html" class="menuItem">Home</a></li>
+                <li class = "borders">|</li>
+                <li><a href="about.html" class="menuItem">About</a></li>
+                <li class = "borders">|</li>
+                <li><a href="contact.html" class="menuItem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+            
+    <!-- Home Content-->
+    <!-- <div class="container">
+        <img id="home-image" src="./images/index-banner.png">
+    </div> -->
+    
+    <div id="home" class="container"> 
+
+        <!-- Title of Page -->
+        <h4 id="home-title">Welcome to the Law Offices of Theodore A. Behlendorf</h4>
+       
+        <!-- Row with Twitter Feed -->
+        <div class="row">
+            <div id="home-info" class="col s12 m8 l8"> 
+
+                <!-- Summary of Work -->
+                <h5>Who Are We?</h5>  
+                <p>We are an immigration law firm based in Los Angeles. Our focus is exclusively on handling immigration cases, representing both individual and corporate clients within and outside the United States. Theodore Behlendorf and Maria Sedano each have more than 20 years of experience practicing all aspects of immigration law.</p>
+                
+                <!-- 'About' button -->
+                <a href="about.html" id="about-btn" class="btn">Click to Meet the Team</a>
+
+                <!-- Scope of Work -->
+                <h5>Our Scope of Work</h5>
+                <p> Our services include assisting clients in obtaining nonimmigrant visas and permanent resident (green card) status for themselves, their families, and their employees. The Law Offices represent clients from all over the United States and the world. We are also fluent in the following languages: </p>
+
+                <div class="row">
+                    <ul id="language">
+                        <div class="col s2"></div>
+                        <div class="col s3">
+                            <li>English</li>
+                            <li>Tagalog</li>
+                        </div>
+                        <div class="col s3">
+                            <li>Cebuano</li>
+                            <li>Spanish</li>
+                        </div>
+                        <div class="col s3">
+                            <li>Mandarin</li>
+                            <li>Russian</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Twitter Column -->
+            <div class="col s12 m3 l3" id="twitter"> 
+                <div class="tHeader">
+                    <h7><hr><em>Twitter's Live Feed</em></h7><hr>
+                </div>
+
+                <!-- Twitter Feed -->
+                <a class="twitter-timeline" href="https://twitter.com/TBehlendorf/lists/uscis-updates?ref_src=twsrc%5Etfw"   data-height="350">Twitter List by @TBehlendorf</a> 
+                
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>  
+
+        <br>
+        <hr>
+
+        <h5 id="type-of-work">Click on the buttons below to reveal what we work on for each category.</h5>
+
+        <!-- Row Three with Buttons and Divs -->
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div id="Div1" class="divs">
+                    <br><br><br><br>
+                    Non-Immigrant: 
+                    <br> 
+                    Temporary Status
+                </div>
+
+                <div id="Div2" class="divs">
+                    <h6>Exchange/change visa status to...</h6>
+                    <div class="tasks">
+                        <li>B-1/B-2</li>
+                        <li>E-1, E-2, and E-3</li>
+                        <li>F</li>
+                        <li>H-1B1 and H-1B</li>
+                        <li>EB 5 for Immigrant investors</li>
+                        <li>L-1A/B </li>
+                        <li>O-1A/B</li>
+                        <li>P-1A/N, P-2 and P-3</li>
+                        <li>R-1,</li>
+                        <li>TN</li>
+                        <li>U</li>
+                        <li style="list-style-type: none;">for Principal applicants and their dependents</li>
+                    </div>
+                </div>  
+                <input id="Button1" class="button-switch" type="button" value="View" onclick="switchVisible();"/>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div id="Div3" class="divs">
+                    <br><br><br>
+                    Immigrant - Permanent Status:
+                    <br> 
+                    Employment Based
+                </div>
+
+                <div id="Div4" class="divs">
+                    <div class="tasks">
+                        <li>EB 1 / EB 1A / EB 1C</li>
+                        <li> EB 2 with/out NIW</li>
+                        <li>EB 3</li>
+                        <li>EB 4 for Religious Workers</li>
+                        <li>EB 5 Immigrant investors</li>
+                        <li>Schedule A petitions </li>
+                        <li style="list-style-type: none;">and labor certifications</li>
+                        <li style="list-style-type: none;">through PERM</li>
+                    </div>
+                </div>    
+                <input id="Button2" class="button-switch" type="button" value="View" onclick="switchVisible2();"/>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div id="Div5" class="divs">
+                    <br><br><br>
+                    Immigrant - Permanent Status: Family-Based
+                </div>
+
+                <div id="Div6" class="divs">
+                    <div class="tasks">
+                        <li>First, Second, Third, and Fourth Preference</li>
+                        <li>K-1 and K-3 visas</li>
+                        <li>Immigrant...</li>
+                        <li>including adopted children and children born out of wedlock</li>
+                    </div>
+                </div>
+                <input id="Button3" class="button-switch" type="button" value="View" onclick="switchVisible3();"/>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div id="Div7" class="divs">
+                    <br><br><br><br>
+                    Other
+                </div>
+                
+                <div id="Div8" class="divs">
+                    <div class="tasks">
+                        <li>Green Card Lottery</li>
+                        <li>DACA</li>
+                        <li>Asylum/Refugee</li>
+                        <li>Citizenship</li>
+                        <li>Hardship Waivers</li>
+                        <li>204(L)</li>
+                        <li>CSPA Considerations</li>
+                        <li>Consular Practice</li>
+                    </div>
+                </div>
+                <input id="Button4" class="button-switch" type="button" value="View" onclick="switchVisible4();"/>
+            </div>
+        </div>
+            
+        <br>
+        
+        <!-- 'Contact' button -->
+        <a href="contact.html" id="contact-btn" class="btn">Click to Contact us for a FREE Consultation</a>
+  
+        <br>
+
+        <div class="body"></div>
+       
+        <script>
+            function switchVisible() {
+    	        var div1 = document.getElementById('Div1');
+    	        var div2 = document.getElementById('Div2');
+    
+                if (div1 !== undefined && div2 !== undefined) {
+    	            div1.style.display = div2.style.display === '' ? 'none' : div2.style.display === 'none' ? 'none' : 'block';
+    	            div2.style.display = div1.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+
+            function switchVisible2() {
+    	        var div3 = document.getElementById('Div3');
+    	        var div4 = document.getElementById('Div4');
+    	
+                if (div3 !== undefined && div4 !== undefined) {
+    	            div3.style.display = div4.style.display === '' ? 'none' : div4.style.display === 'none' ? 'none' : 'block';
+                    div4.style.display = div3.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+
+            function switchVisible3() {
+    	        var div5 = document.getElementById('Div5');
+                var div6 = document.getElementById('Div6');
+    	
+                if (div5 !== undefined && div6 !== undefined) {
+    	            div5.style.display = div6.style.display === '' ? 'none' : div6.style.display === 'none' ? 'none' : 'block';
+    	            div6.style.display = div5.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+
+            function switchVisible4() {
+    	        var div7 = document.getElementById('Div7');
+                var div8 = document.getElementById('Div8');
+	
+                if (div7 !== undefined && div8 !== undefined) {
+    	            div7.style.display = div8.style.display === '' ? 'none' : div8.style.display === 'none' ? 'none' : 'block';
+    	            div8.style.display = div7.style.display === 'block' ? 'none' : 'block';
+                }
+            }
+        </script>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer" id="footer">
+        <div id="contentFooter">
+            <div class="row">
+                <!-- Div for About Company -->
+                <div class="col s12 m4">
+                    <h5 class="white-text center-align">Theodore A. Behlendorf, APC</h5><br>
+                    <p class="grey-text text-lighten-4 center-align">Please contact us for a FREE Initial Consultation <br> We handle ALL types of immigration matters. <br> We represent clients anywhere within or outside the U.S.</p>
+                </div>
+                <!-- Div for Map Input -->
+                <div class="col s12 m3">
+                    <div id="map" class="map"></div><br>
+                    <div class="container" id="copyright">
+                        © 2020 Copyright Theodore A. Behlendorf, APC
+                    </div>
+                </div>
+                <!-- JS for Map -->
+                <script>
+                    var map = new ol.Map({
+                        target: 'map',
+                        layers: [
+                            new ol.layer.Tile({
+                            source: new ol.source.OSM()
+                            })
+                        ],
+                        view: new ol.View({
+                            center: ol.proj.fromLonLat([-118.478890, 34.155240]),
+                            zoom: 16
+                        })
+                    });
+                </script>
+                <!-- Div for Location Info -->
+                <div class="col s12 m3">
+                    <h5 class="white-text center-align">Location</h5>
+                    <p class="grey-text text-lighten-4 center-align">
+                        15840 Ventura Blvd Ste 208<br> 
+                        Encino, CA 91436<br>
+                        Tel. (213) 487-4861 / (213) 487-4862<br> 
+                        Fax. (213) 487-4863
+                    </p>
+                </div>
+                <!-- Div for Links -->
+                <div class="col s12 m2">
+                    <h5 class="white-text center-align">Links</h5>
+                    <ul>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="about.html">About Our Team</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+                        <li class="center-align"><a class="grey-text text-lighten-3" href="terms.html" target="_blank">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Local JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

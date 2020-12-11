@@ -141,7 +141,6 @@ This page is accessible when the user clicks on the `contact` tab from the `navi
 This website was done with a collaborative effort from Brandon Myhan, Carolina Aldana, Cattleya Pia, Maira Garcia, and Zach Corpuz.
 
 
-
 [contributors-shield]: https://img.shields.io/github/contributors/zcorpuz/behlendorfLaw.svg?style=for-the-badge
 [contributors-url]: https://github.com/zcorpuz/behlendorfLaw/graphs/contributors
 [issues-shield]: https://img.shields.io/github/issues/zcorpuz/behlendorfLaw.svg?style=for-the-badge

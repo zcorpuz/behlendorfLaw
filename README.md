@@ -1,6 +1,6 @@
-![Contributors][contributors-shield][contributors-url]
-![Issues][issues-shield][issues-url]
-![MIT License][license-shield][license-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
 <br />
 <p align="center">
@@ -48,7 +48,11 @@
 
 
 ## About the Project
-This website is developed for our client, Law Offices of Theodore A. Behlendorf, based in Los Angeles, CA. We were tasked to build a website that is easy-to-read but that was also presentable to any client who comes across this site. It includes a home page, an about page, and a contact page. 
+This website is developed for our client, Law Offices of Theodore A. Behlendorf, based in Los Angeles, CA. We were asked to build a website that is easy-to-read but that was also presentable to any client who comes across this site. It includes a home page, an about page, and a contact page. 
+
+The reason we chose to partner with this client is because they were interested in increasing their online presence, especially during the COVID-19 pandemic. They knew they would not receive the same number of in-person clientele, so they wanted to establish a platform where they would connect to their clientele virtually. 
+
+This application is responsive, where no matter what the screen size (or device used), the application would still be presentable to the user. 
 
 
 ## Demo
@@ -58,7 +62,7 @@ This is the demo of the website: https://zcorpuz.github.io/behlendorfLaw/.
 ## Site Visuals
 
 ### Landing Page
-This is how the site will look like if:
+This is how the site will look like when:
 
 * opened on a desktop:
 ![Law Office Website in Desktop Form](/images/law-desktop.png)
@@ -86,6 +90,7 @@ This is how the site will look like if:
 
 
 ### License
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
 
 ### Contact Informationa

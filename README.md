@@ -59,11 +59,12 @@ This is the demo of the website: https://zcorpuz.github.io/behlendorfLaw/.
 This is how the site will look like when:
 
 * opened on a desktop:
-![Law Office Website in Desktop Form](/images/law-desktop.png)
+![Law Office Website in Desktop Form](./images/law-desktop.png)
 
 * opened on a mobile device:
 <br />
-![Law Office Website in Mobile Form](/images/law-mobile.png)
+
+![Law Office Website in Mobile Form](./images/law-mobile.png)
 
 ### Built With 
 * [Materialize](https://materializecss.com/)

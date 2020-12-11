@@ -27,21 +27,18 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#built-with">Demo</a></li>
+      </ul>
+      <ul>
+        <li><a href="#built-with">Landing Page</a></li>
+      </ul>
+      <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contributing">Roadmap/To-do</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Team</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -54,12 +51,9 @@ The reason we chose to partner with this client is because they were interested 
 
 This application is responsive, where no matter what the screen size is (or device used), the application would still be presentable to the user. 
 
-
-## Demo
+### Demo
 This is the demo of the website: https://zcorpuz.github.io/behlendorfLaw/.
 
-
-## Site Visuals
 
 ### Landing Page
 This is how the site will look like when:
@@ -71,8 +65,7 @@ This is how the site will look like when:
 <br />
 ![Law Office Website in Mobile Form](/images/law-mobile.png)
 
-
-## Built With 
+### Built With 
 * [Materialize](https://materializecss.com/)
 * [jQuery](https://jquery.com/) 
 

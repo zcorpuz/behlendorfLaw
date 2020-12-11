@@ -210,7 +210,7 @@ h6 {
 
 /* Contact Page */
 .contactContainer {
-    background: url(images/contactPageBG.jpg);
+    background: url(../images/contactPageBG.jpg);
     max-width: fill;
     max-height: fill;
 }
@@ -339,7 +339,7 @@ h6 {
 
     #twitter {
         margin: 5px;
-        max-width: 95%;
+        max-width: 50%;
     }
 
     .button-switch {

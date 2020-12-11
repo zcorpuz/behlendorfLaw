@@ -141,9 +141,17 @@ This page is accessible when the user clicks on the `contact` tab from the `navi
 This website was done with a collaborative effort from Brandon Myhan, Carolina Aldana, Cattleya Pia, Maira Garcia, and Zach Corpuz.
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cab036337f384a2388ca26d8b33eb7f3fc3f79a6
 [contributors-shield]: https://img.shields.io/github/contributors/zcorpuz/behlendorfLaw.svg?style=for-the-badge
 [contributors-url]: https://github.com/zcorpuz/behlendorfLaw/graphs/contributors
 [issues-shield]: https://img.shields.io/github/issues/zcorpuz/behlendorfLaw.svg?style=for-the-badge
 [issues-url]: https://github.com/zcorpuz/behlendorfLaw/issues
 [license-shield]: https://img.shields.io/github/license/zcorpuz/behlendorfLaw.svg?style=for-the-badge
+<<<<<<< HEAD
 [license-url]: https://github.com/zcorpuz/behlendorfLaw/blob/master/LICENSE.md
+=======
+[license-url]: https://github.com/zcorpuz/behlendorfLaw/blob/master/LICENSE.md
+>>>>>>> cab036337f384a2388ca26d8b33eb7f3fc3f79a6

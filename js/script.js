@@ -7,11 +7,11 @@
 
 // Contact Page//
 var firstName = document.getElementById("first_name")
-firstName.className = "userInput"
+// firstName.className = "userInput"
 var lastName = document.getElementById("last_name")
-lastName.className = "userInput"
+// lastName.className = "userInput"
 var email = document.getElementById("email")
-email.className = "userInput"
+// email.className = "userInput"
 // Submiting Contact Form using Submit Button//
 $(document).ready(function(){  
     $(".btn").click(function(event){
